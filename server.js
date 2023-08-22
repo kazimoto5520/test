@@ -10,6 +10,8 @@ app.use(morgan('dev'));
 
 const port = process.env.PORT;
 
+const db = mongoose.connect()
+
 app.get("/", (req, res) => {
     res.send('Hello');
 })
